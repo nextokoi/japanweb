@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajando por Japón</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="img/android-chrome-512x512.png">
+    <script src="https://kit.fontawesome.com/fcf089f8c7.js" crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .fondo-caption{
+            background-color: rgba(0, 0, 0, 0.50);
+            padding: 5px;
+        }
+
+        .cabecera {
+            background-image: url("img/japon.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sombra {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🍣 Viajando por Japón</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 flex-wrap justify-content-lg-end justify-content-md-center justify-content-sm-center flex-fill py-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#japon">Destino: Japón</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ofrecer">¿Qué ofrecemos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#razones">Razones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CABECERA -->
+
+    <header class="container-fluid cabecera d-flex flex-column align-items-center justify-content-center text-white ">
+        <h1 class="sombra mb-4">
+            Viajando por Japón ⛩
+        </h1>
+        <h5 class="text-center">¿Estás buscando una forma de organizar tu viaje a Japón?</h5>
+        <h6 class="mb-4">Encuentra lo necesario aquí</h6>
+        <a href="#japon" class="btn btn-danger btn-lg mt-4">Echa un vistazo</a>
+    </header>
+
+    <!-- CONTENIDO CON IMAGEN Y TEXTO -->
+
+    <div class="container-fluid">
+        <h2 class="text-center my-5" id="japon">¿Por qué elegir Japón como destino de viaje?</h2>
+        <div class="container my-5 shadow">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-6 p-0">
+                    <img src="img/sushi.jpg" alt="" />
+                </div>
+                <div class="col-12 col-md-6 p-4 mt-4">
+                    <h3 class="mb-3">
+                        <i class="fas fa-utensils"></i>
+                        Gastronomía
+                    </h3>
+                    <p>
+                        La gastronomía japonesa es una de las más reconocidas a nivel mundial. La variedad de platos y
+                        la calidad de los ingredientes hacen que sea un destino ideal para los amantes de la comida.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 shadow">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-6 p-4">
+                    <h3 class="mb-3">
+                        <i class="fas fa-landmark"></i>
+                        Cultura
+                    </h3>
+                    <p>
+                        La cultura japonesa es una de las más ricas y variadas del mundo. La mezcla de tradiciones y
+                        costumbres de los diferentes grupos étnicos que han habitado el país hace que sea un destino
+                        único.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 p-0">
+                    <img src="img/castillo.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS -->
+
+        <h2 class="text-center my-4" id="ofrecer">¿Qué te ofrecemos?</h2>
+        <main class="d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 18rem">
+                <img src="img/japon-calle.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        🧭 Rutas con alternativas
+                    </h5>
+                    <p class="card-text">
+                        Te ofrecemos rutas con alternativas para que puedas elegir la que más te guste y acorde a tu
+                        tiempo de estancia.
+                    </p>
+
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#japonModal">Más info</a>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 18rem">
+                <img src="img/avion.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        ✈ Precios de vuelos aproximados según tu país
+                    </h5>
+                    <p class="card-text">
+                        Tenemos a tu disposición una tabla con los precios aproximados de los vuelos según tu país de
+                        origen.
+                    </p>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#japonModal">Más
+                        info</a>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 18rem">
+                <img src="img/ryokan.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        🛌🏼 Precios de cualquier tipo de alojamiento</h5>
+                    <p class="card-text">
+                        Te mostramos precios aproximados de cualquier tipo de alojamiento que puedas necesitar.
+                    </p>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#japonModal">Más info</a>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 18rem">
+                <img src="img/chef.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">🍱 Lugares recomendados para comer</h5>
+                    <p class="card-text">
+                        Te recomendamos los platos más típicos locales y lugares ocultos que otros turistas no conocen.
+                    </p>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#japonModal">Más info</a>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 18rem">
+                <img src="img/templo.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        🏯 Sitios que no puedes perderte
+                    </h5>
+                    <p class="card-text">
+                        Te aconsejamos los lugares más emblemáticos de cada región para que no te pierdas nada.
+                    </p>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#japonModal">Más info</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- CAROUSEL -->
+
+        <h2 class="text-center my-5" id="razones">¿Necesitas más razones para venir?</h2>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slides/slide-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="fondo-caption">
+                                <h5>Akibahara</h5>
+                                <p>
+                                    El barrio de Akibahara es el lugar perfecto para los amantes de la cultura pop y el manga.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slides/slide-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="fondo-caption">
+                                <h5>Kimonos</h5>
+                                <p>
+                                    Los kimonos son una de las prendas más típicas de Japón y son muy fáciles de encontrar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slides/slide-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="fondo-caption">
+                                <h5>Naturaleza</h5>
+                                <p>
+                                    Japón es un país muy verde y con una gran variedad de paisajes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slides/slide-4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="fondo-caption">
+                                <h5>Templos</h5>
+                                <p>
+                                    Los templos son uno de los lugares más emblemáticos de Japón y no puedes perderte ninguno.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slides/slide-5.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="fondo-caption">
+                                <h5>Sushi</h5>
+                                <p>
+                                    El sushi es uno de los platos más típicos de Japón, debes probar su auténtico sabor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4" id="contacto">
+        <h2 class="my-4 text-center">¿Quiéres más información? Escríbenos</h2>
+
+        <form id="contactForm">
+        <div class="mb-3">
+            <label class="form-label" for="name">Tu nombre</label>
+            <input class="form-control" id="name" type="text" placeholder="nombre" />
+        </div>
+    
+        <div class="mb-3">
+            <label class="form-label" for="emailAddress">Tu email</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="email" />
+        </div>
+    
+        <div class="mb-3">
+            <label class="form-label" for="message">El mensaje que nos quieras enviar</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Nos puedes comentar cualquier duda que tengas" style="height: 10rem;"></textarea>
+        </div>
+
+        <div class="d-grid">
+            <button class="btn btn-danger btn-lg" type="submit">Enviar</button>
+        </div>
+    
+        </form>
+    </div>
+    <footer class="container-fluid bg-danger text-light text-center p-4 mt-5">
+        Néstor Perera 2022 ©
+    </footer>
+
+    <div class="modal fade" id="japonModal" tabindex="-1" aria-labelledby="japonModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="japonModalLabel">Resumen de un viaje a Japón</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/campo.jpg" alt="" class="card-img-top" />
+                    <button type="button" class="btn btn-danger my-4" data-bs-toggle="popover"
+                        data-bs-title="Si quieren información más personalizada, hablénnos por el formulario de contacto"
+                        data-bs-content="Post realizado por Néstor Perera" data-bs-placement="bottom">
+                        Atención personalizada
+                    </button>
+
+
+                    <h3>Flipar con sus templos</h3>
+                    <p>
+                        La religión y la tradición en un país tan avanzado como Japón todavía son aspectos muy
+                        importantes de la sociedad. Eso hace que los templos, en su mayoría sintoístas y budistas,
+                        formen parte de la cotidianidad de su gente. Posiblemente en Kioto como capital histórica, sea
+                        donde se concentren algunos de los mejores templos del país, pero no es el único sitio: <a
+                            href="#" data-bs-toggle="tooltip" data-bs-title="Si te gusta la ciudad, te lo recomendamos."
+                            data-bs-placement="right">Tokio</a>, Nikko, <a href="#" data-bs-toggle="tooltip"
+                            data-bs-title="Si no te gusta la ciudad pero si el campo, Nara rebosa de ello. Te lo recomendamos si aún tienes tiempo."
+                            data-bs-placement="left">
+                            Nara</a> o Miyajima cuentan con santuarios igual de impresionantes.
+                    </p>
+
+                    <h4 class="mt-4 mb-2">Los mejores templos de Japón</h4>
+                    <p>
+                        Estos, a nuestro parecer, son los mejores templos de Japón:
+                    <ul>
+                        <li><u>Kinkakuji (Kioto)</u>, el templo de de oro, un pabellón de 3 plantas enteramente
+                            cubiertas de papel de oro. El contraste con la naturaleza que lo rodea es brutal.
+                        <li><u>Kyomizu-dera (Kioto)</u>, su estructura de madera es majestuosa, y las vistas de Kioto
+                            desde su posición no menos impresionantes. Verás tres fuentes que dicen que traen diferentes
+                            beneficios para el que bebe de su agua: salud, éxito profesional y amor. ¿Cuál necesitas
+                            más?
+                        <li><u>Fushimi Inari-taisha (Kioto)</u>, si has visto «Memoria de una Geisha» lo reconocerás
+                            fácilmente por su casi interminable fila de toris (arcos rojos) que serpentean por la ladera
+                            de esta montaña sagrada. Es uno de los santuarios más bonitos del mundo entero, no dejes de
+                            visitarlo.
+                        <li><u>Senso-ji (Tokio)</u>, es nuestro templo favorito de Tokio, localizado en pleno corazón
+                            del antiguo barrio de Asakusa. Durante el día está lleno de vida gracias al mercadillo
+                            artesanal que hay delante de su entrada, pero de noche reina la calma absoluta, lo mejor es
+                            visitarlo en ambos momentos. No te pierdas la pagoda de 5 pisos, una de las más altas de
+                            Japón.
+                        <li><u>Santuario de Tosho-gu (Nikko)</u>, rodeado de naturaleza, este santuario está dedicado
+                            nada más y nada menos que a Tokugawa Ieyasu, el shogun más grande que tuvo Japón.
+                        <li><u>Todai-ji (Nara)</u>, tiene una peculiaridad en forma de record: es la estructura de
+                            madera más grande del mundo (y eso que tras sufrir unos incendios, es más pequeño que el
+                            original). Imperdible su estatua del Buda Gigante.
+                        <li><u>Itsukushima Shinto (Miyajima)</u>, seguro que has visto en más de una ocasión su imagen:
+                            la de un gran tori rojo que, cuando sube la marea, queda cubierto por el mar.
+                    </ul>
+                    </p>
+
+                    <h3 class="mt-5 mb-4">2. Dormir en un Shukubo, algo que hacer en Japón y que te encantará</h3>
+
+                    <p>
+                        Cuando comenzamos a planear nuestro viaje de dos meses por Japón nunca habíamos escuchado hablar
+                        de Koyasan. Por suerte (y algo de casualidad) nos topamos con este nombre tan místico que
+                        representa, nada más y nada menos, que una de las ciudades más sagradas de todo Japón.
+                    </p>
+                    <p>
+                        Lo recomendable aquí es pasar una noche en un monasterio budista (shukubo), compartiendo el día
+                        a día de los monjes, acudiendo a su oración matinal, probando su comida, dándote un baño en su
+                        sento y conociendo más sobre sus tradiciones. Vamos, sin duda es una de las mejores cosas que
+                        hacer en Japón en tu primer viaje 🙂
+                    </p>
+
+                    <h4 class="mt-4 mb-2">Koyasan</h4>
+                    <p>
+                        Además, Koyasan ofrece varios santuarios importantes, pero sobre todo tienes que darte una
+                        vuelta por el Okunoin, un cementerio súper peculiar donde descansan más de 200.000 almas. El
+                        sitio es de aquellos que impresionan y al mismo tiempo regalan paz y tranquilidad. Al final del
+                        sendero de unos 2 km se llega a la tumba de Kobo Daishi, el monje que fundó KoyaSan y el
+                        “budismo shingon”.
+                    </p>
+
+                    <h3 class="mt-5 mb-4">3. Disfrutar de la gastronomía, algo delicioso que hacer en Japón</h3>
+
+                    <p>
+                        ¿Qué decir de la gastronomía japonesa? Ya sabrás que es una de las más sanas, completas y
+                        sabrosas del mundo. Si, como nosotros, disfrutas de la cocina local, en Japón habrás encontrado
+                        un pequeño paraíso. Así que en tu primera viaje al país del sol naciente aprovecha para probar
+                        muchos platos diferentes: hay vida (y mucha) más allá del sushi.
+                    </p>
+                    <h4 class="mt-4 mb-2">Clase de cocina japonesa</h4>
+                    <p>
+                        Pero si quieres vivir una experiencia aún más auténtica ¿por qué no conocer la gastronomía
+                        japonesa desde dentro? Hay webs donde apuntarte a una comida o cena en casa de anfitriones
+                        japoneses (desde 3.000¥, unos 22€), o bien participar en clases de cocina en la propia casa del
+                        anfitrión (desde 6.000¥, unos 45€).
+
+                        Te aseguramos que experimentarás una velada memorable ya que, no solo aprenderás más sobre la
+                        cocina japonesa auténtica, sino que de paso te llevarás unos amigos. Además el precio está muy
+                        bien considerando que, si sales a cenar varias portadas en un restaurante mediano, gastarás lo
+                        mismo o más 🙂
+                    </p>
+
+                    <h3 class="mt-5 mb-4">4. Pisar al menos un castillo medieval</h3>
+
+                    <p>
+                        Cuando compramos los billetes para Japón estábamos en Nueva Zelanda y recuerdo que, en los
+                        tiempos muertos que teníamos viajando en furgoneta, nos empapábamos con libros y podcasts sobre
+                        samuráis, castillos y shogunes.
+                    </p>
+                    <h4 class="mt-4 mb-2">(Mejor si el de Himeji o el de Matsumoto)</h4>
+                    <p>
+                        Unos meses más tarde nos encontramos cara a cara con el Castillo de Himeji y nos sentimos como
+                        los protagonistas de aquellas historias remotas. Y cuando lo recorrimos por dentro pudimos
+                        revivir las tramas que aquí ocurrieron durante la Edad Media (claro que, los móviles que nunca
+                        faltan en cada escena japonesa nos devolvieron pronto a la realidad).
+                    </p>
+                    <p>
+                        Otros castillos que merecen mucho la pena son el de Osaka, una ciudad que nos pareció muy
+                        agradable, contrariamente a lo que habíamos leído, no nos hubiese importado quedarnos más días y
+                        por supuesto el Castillo de Matsumoto, llamado también «del cuervo negro».
+                    </p>
+
+                    <h3 class="mt-5 mb-4">5. Sentirte en el futuro, algo que te pasará en Japón</h3>
+                    <p>
+                        Una de las mejores cosas de Japón es su carácter atemporal: puedes pasar de la Edad Media de los
+                        castillos de Himeji y Osaka a Tokio, la ciudad más futurista del mundo. Sí, en Japón existen los
+                        viajes en el tiempo.
+                    </p>
+                    <p>
+                        Si quieres sentirte como una hormiguita entre los rascacielos, marearte rodeado de luces de neón
+                        y disfrutar como un enano entre tiendas de comics y cosplay, hay dos barrios que no puedes
+                        perderte: Shinjuku y Akihabara. No te extrañe toparte con restaurantes de robots o con chicas de
+                        ojos rosa y pelo verde. ¡En Tokio todo es posible!
+
+                        ¿Y qué decir de sus trenes? Subir a un tren bala es toda una experiencia, eso sí… no te olvides
+                        de comprar con adelanto tu JR Pass.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script>
+        //SCRIPT PARA ACTIVAR LOS POPOVER
+        const popoverTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="popover"]'
+        );
+        const popoverList = [...popoverTriggerList].map(
+            (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+        );
+
+        //SCRIPT PARA ACTIVAR LOS TOOLTIP
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
+</body>
+
+</html>
